@@ -18,3 +18,4 @@
 # When specifying a datadir, make sure the directory exists.
 #  :datadir: /var/lib/hiera
   :datadir: '/etc/puppet/%{::environment}/hieradata'
+
