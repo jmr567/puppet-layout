@@ -4,3 +4,4 @@ environment: 'development'
 location: 'Sydney'
 classes: 
         - 'devapp2'
+        - 'puppet'

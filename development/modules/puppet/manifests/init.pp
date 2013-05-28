@@ -4,7 +4,7 @@
 
 class puppet {
 
-    $puppetmaster      = hiera('puppetmaster')
+    $puppetmaster      = hiera('puppet_master')
     $puppet_packages   = hiera('puppet_packages')
     $puppet_services   = hiera('puppet_services')
     $environment       = hiera('environment','production')

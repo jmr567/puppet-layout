@@ -3,7 +3,6 @@ classes:
         - 'ssh'
         - 'testhiera'
         - 'location'
-        - 'puppet'
 permit_root_login : 'no'
 ssh_users :     - 'root'
                 - 'josh'
