@@ -21,7 +21,7 @@ class puppet {
       before => File[$puppet_template],
     }
 
-    file { '/etc/puppet/puppet.conf':
+    file { $puppet_template:
       ensure => file,
       mode   => 644,
       content => template($puppet_template),
