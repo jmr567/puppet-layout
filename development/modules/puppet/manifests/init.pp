@@ -4,17 +4,18 @@
 
 class puppet {
 
-    $puppetmaster      = hiera('puppet_master','puppetmaster.example.com')
-    $environment       = hiera('environment','production')
+    $puppetmaster     = hiera('puppet_master','puppetmaster.example.com')
+    $environment      = hiera('environment','production')
+    $puppet_role      = hiera('puppet_role','client')
 
 #work out if puppet master or client based on puppet_role fact    
-    if $::puppet_role == 'master' {
+    if $puppet_role == 'master' {
       
-        include puppet::client
+        include puppet::server
     
     } else {
         
-        include puppet::server
+        include puppet::client
     
     }
     

@@ -10,6 +10,7 @@ ssh_users :     - 'root'
 testmsg : 'Puppet Common YAML'
 location: 'location not set'
 puppet_master: 'puppet.example.com'
+puppet_role: 'client'
 dns_servers:
             - '172.16.15.2'
             - '8.8.8.8'
