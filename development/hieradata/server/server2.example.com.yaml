@@ -1,4 +1,5 @@
 ---
-location: "Sydney"
+environment: 'development'
+location: 'Sydney'
 classes: 
-        - devapp2
+        - 'devapp2'

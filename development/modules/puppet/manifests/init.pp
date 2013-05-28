@@ -7,17 +7,18 @@ class puppet {
     $puppetmaster      = hiera('puppetmaster')
     $puppet_packages   = hiera('puppet_packages')
     $puppet_services   = hiera('puppet_services')
+    $environment       = hiera('environment','production')
 
     package { $puppet_packages:
       ensure => present,
-      #before => File['/etc/ssh/sshd_config'],
+      before => File['/etc/puppet/puppet.conf'],
     }
 
-    #file { '/etc/ssh/sshd_config':
-    #  ensure => file,
-    #  mode   => 600,
-    #  content => template('ssh/sshd_config.erb'),
-    #}
+    file { '/etc/puppet/puppet.conf':
+      ensure => file,
+      mode   => 644,
+      content => template('puppet/puppet_client.conf.erb'),
+    }
 
     service { $puppet_services:
       ensure     => running,

@@ -11,12 +11,6 @@
     # The default value is '$confdir/ssl'.
     ssldir = $vardir/ssl
 
-[master]
-  modulepath = $confdir/$environment/modules
-  manifest = $confdir/$environment/manifests/site.pp
-
-pluginsync=true 
-
 [agent]
     # The file in which puppetd stores a list of the classes
     # associated with the retrieved configuratiion.  Can be loaded in
@@ -29,3 +23,6 @@ pluginsync=true
     # extension indicating the cache format is added automatically.
     # The default value is '$confdir/localconfig'.
     localconfig = $vardir/localconfig
+
+environment = <%= environment %>
+
