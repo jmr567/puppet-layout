@@ -1,4 +1,4 @@
-class testhiera {
+class hiera {
     $testmsg = hiera("testmsg")
     file { '/tmp/testhiera.txt':
         content => inline_template("<%= testmsg %>\n"),
@@ -6,5 +6,8 @@ class testhiera {
     $location = hiera("location")
     file { '/tmp/classestest.txt':
         content => inline_template("<%= location %>\n"),
+    }
+    package { 'hiera':
+      ensure => latest,
     }
 }
