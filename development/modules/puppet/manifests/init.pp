@@ -1,7 +1,5 @@
 # puppet.pp
 
-#include ssh
-
 class puppet {
 
     $puppetmaster     = hiera('puppet_master','puppetmaster.example.com')
