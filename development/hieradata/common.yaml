@@ -1,16 +1,17 @@
 ---
-classes:        
-        - 'hiera'
-        - 'facter'
-        - 'location'
-        - 'ssh'
+classes:
+- 'hiera'
+- 'facter'
+- 'location'
+- 'ssh'
 permit_root_login : 'no'
-ssh_users :     - 'root'
-                - 'josh'
+ssh_users :
+- 'root'
+- 'josh'
 testmsg : 'Puppet Common YAML'
 location: 'location not set'
 puppet_master: 'puppet.example.com'
 puppet_role: 'client'
 dns_servers:
-            - '172.16.15.2'
-            - '8.8.8.8'
+- '172.16.15.2'
+- '8.8.8.8'

@@ -2,6 +2,6 @@
 testmsg: 'Test from server2.example.com YAML'
 environment: 'development'
 location: 'Sydney'
-classes: 
-        - 'devapp2'
-        - 'puppet'
+classes:
+- 'devapp2'
+- 'puppet'
