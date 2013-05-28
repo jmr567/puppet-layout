@@ -11,7 +11,7 @@ class devapp3 {
       path    => '/tmp/devapp3_database.conf',
       ensure  => present,
       mode    => 0640,
-      content => template(devapp3_database.comf.erb),
+      content => template('devapp3_database.comf.erb'),
  }
 
 }
