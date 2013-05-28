@@ -1,19 +1,19 @@
 ---
 classes:        
-        - "ssh"
-        - "testhiera"
-        - "location"
-        - "puppet"
-permit_root_login : "no"
-ssh_users :     - "root"
-                - "josh"
-testmsg : "Puppet Common YAML"
-location: "location not set"
-puppetmaster: "puppet.example.com"
+        - 'ssh'
+        - 'testhiera'
+        - 'location'
+        - 'puppet'
+permit_root_login : 'no'
+ssh_users :     - 'root'
+                - 'josh'
+testmsg : 'Puppet Common YAML'
+location: 'location not set'
+puppet_master: 'puppet.example.com'
 puppet_packages:
-                - "puppet"
+                - 'puppet'
 puppet_services:
-                - "puppet"
+                - 'puppet'
 dns_servers:
-            - "172.16.15.2"
-            - "8.8.8.8"
+            - '172.16.15.2'
+            - '8.8.8.8'

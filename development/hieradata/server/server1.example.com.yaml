@@ -1,8 +1,9 @@
 ---
 testmsg: 'Test from server1.example.com YAML'
-location: "Sydney"
-#puppet_packages:
-#                - puppet,puppet-server
-#puppet_services:
-#                - puppet,puppetmaster
+location: 'Sydney'
+puppet_master: 'puppet.example.com'
+puppet_packages: 	- 'puppet'
+					- 'puppet-server'
+puppet_services:	- 'puppet'
+					- 'puppetmaster'
 
