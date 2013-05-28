@@ -1,8 +1,5 @@
 ---
 classes: 
-        - 'ssh'
-        - 'testhiera'
-        - 'location'
         - 'devapp'
 ssh_packages: - 'openssh'
               - 'openssh-clients'
