@@ -25,7 +25,7 @@ class puppet {
       enable     => true,
       hasrestart => true,
       hasstatus  => true,
-      #subscribe  => File['/etc/ssh/sshd_config'],
+      subscribe  => File['/etc/puppet/puppet.conf'],
     }
 
 }
