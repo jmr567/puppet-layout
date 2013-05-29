@@ -2,6 +2,7 @@
 
 class puppet {
 
+    $environment      = hiera('environment','production')
     $puppetmaster     = hiera('puppet_master','puppetmaster.example.com')
     $puppet_role      = hiera('puppet_role','client')
 

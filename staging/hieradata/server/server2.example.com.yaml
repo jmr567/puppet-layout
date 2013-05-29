@@ -1,4 +1,5 @@
 ---
+environment: 'development'
 testmsg: 'Test from server2.example.com YAML'
 location: 'Sydney'
 devapp3_database: 'database1.example.com'

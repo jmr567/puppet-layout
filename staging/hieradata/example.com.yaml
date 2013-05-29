@@ -3,4 +3,4 @@ dns_servers :
 - '172.16.15.140'
 - '172.16.15.141'
 classes:
-- devapp3
+- 'devapp3'
