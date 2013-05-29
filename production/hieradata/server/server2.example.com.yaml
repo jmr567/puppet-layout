@@ -2,6 +2,9 @@
 testmsg: 'Test from server2.example.com YAML'
 environment: 'development'
 location: 'Sydney'
+devapp3_database: 'database1.example.com'
 classes:
+- 'devapp3' 
 - 'devapp2'
-- 'puppet'
+devapp3_url: 'http://devapp3.example.com'
+devapp3_database: 'jdbc:mysql://server1.example.com:3306/devapp3'

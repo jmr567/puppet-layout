@@ -1,0 +1,7 @@
+---
+ssh_packages:
+- 'openssh'
+- 'openssh-clients'
+- 'openssh-server'
+permit_root_login: - 'yes'
+testmsg: 'Test from CentOS YAML'

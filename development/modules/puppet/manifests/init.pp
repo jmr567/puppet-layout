@@ -55,13 +55,20 @@ class puppet::server {
     mode   => 644,
     content => template('puppet/puppet_server.conf.erb'),
   }
-        
+
+  file { '/etc/puppet/autosign.conf':
+    ensure => file,
+    mode   => 644,
+    content => template('puppet/autosign.conf.erb'),
+    before => Service['puppetmaster'],
+  }
+
   service { ['puppet','puppetmaster']:
     ensure     => running,
     enable     => true,
     hasrestart => true,
     hasstatus  => true,
-    subscribe  => File['/etc/puppet/puppet.conf'],
+    subscribe  => File[['/etc/puppet/puppet.conf','/etc/puppet/autosign.conf']],
   }
       
 }
