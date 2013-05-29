@@ -9,3 +9,4 @@ puppet_packages:
 puppet_services:
 - 'puppet'
 - 'puppetmaster'
+

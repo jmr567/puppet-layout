@@ -3,7 +3,6 @@
 class puppet {
 
     $puppetmaster     = hiera('puppet_master','puppetmaster.example.com')
-    $environment      = hiera('environment','production')
     $puppet_role      = hiera('puppet_role','client')
 
 #work out if puppet master or client based on puppet_role fact    

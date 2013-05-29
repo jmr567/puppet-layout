@@ -1,5 +1,6 @@
 ---
 classes:
+- 'puppet'
 - 'hiera'
 - 'facter'
 - 'location'
