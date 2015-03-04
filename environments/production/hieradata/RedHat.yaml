@@ -1,0 +1,12 @@
+---
+classes:
+- 'devapp'
+ssh_packages:
+- 'openssh'
+- 'openssh-clients'
+- 'openssh-server'
+permit_root_login: - 'yes'
+ssh_users:
+- 'root'
+- 'josh'
+testmsg: 'Test from Red Hat YAML'

@@ -1,0 +1,23 @@
+---
+classes:
+- 'puppet'
+- 'hiera'
+- 'facter'
+- 'location'
+- 'ssh'
+- 'operatingsystem'
+- 'mcollective'
+os_packages:
+- 'vim-enhanced'
+permit_root_login : 'no'
+ssh_users :
+- 'root'
+- 'josh'
+environment: 'production'
+testmsg : 'Puppet Common YAML'
+location: 'location not set'
+puppet_master: 'puppet.example.com'
+puppet_role: 'client'
+dns_servers:
+- '172.16.15.2'
+- '8.8.8.8'

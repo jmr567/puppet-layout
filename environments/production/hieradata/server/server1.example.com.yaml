@@ -1,0 +1,12 @@
+---
+testmsg: 'Test from server1.example.com YAML'
+location: 'Sydney'
+puppet_role: 'master'
+puppet_master: 'puppet.example.com'
+puppet_packages:
+- 'puppet'
+- 'puppet-server'
+puppet_services:
+- 'puppet'
+- 'puppetmaster'
+
