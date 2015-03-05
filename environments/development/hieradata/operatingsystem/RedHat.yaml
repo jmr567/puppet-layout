@@ -1,6 +1,10 @@
 ---
 classes:
 - 'devapp'
+os_packages:
+- 'vim-enhanced'
+- 'bind-utils'
+- 'mlocate'
 ssh_packages:
 - 'openssh'
 - 'openssh-clients'

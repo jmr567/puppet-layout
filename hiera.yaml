@@ -4,11 +4,12 @@
   - puppet
 :hierarchy:
   - server/%{::clientcert}
-  - %{::domain}
-  - %{::environment}
-  - %{::operatingsystem}
-  - %{::location}
-  - virtual_%{::is_virtual}
+  - domain/%{::domain}
+  - netgroup/%{::netgroup}
+  - environment/%{::environment}
+  - operatingsystem/%{::operatingsystem}
+  - location/%{::location}
+  - virtual/%{::virtual}
   - common
 
 :yaml:

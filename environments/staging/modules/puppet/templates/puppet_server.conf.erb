@@ -12,8 +12,9 @@
     ssldir = $vardir/ssl
 
 [master]
-  modulepath = $confdir/$environment/modules
-  manifest = $confdir/$environment/manifests/site.pp
+  #modulepath = $confdir/$environment/modules
+  #manifest = $confdir/$environment/manifests/site.pp
+  environmentpath = $confdir/environments
 
 pluginsync=true 
 

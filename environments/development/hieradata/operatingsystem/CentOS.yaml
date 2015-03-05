@@ -3,5 +3,9 @@ ssh_packages:
 - 'openssh'
 - 'openssh-clients'
 - 'openssh-server'
+os_packahes:
+- 'vim-enhanced'
+- 'bind-utils'
+- 'mlocate'
 permit_root_login: - 'yes'
 testmsg: 'Test from CentOS YAML'

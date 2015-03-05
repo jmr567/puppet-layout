@@ -1,6 +1,6 @@
 class devapp3 {
   
-    $environment       = hiera('environment','noEnvironment')
+    #$environment       = comes from facter
     $devapp3_url       = hiera('devapp3_url','noURLstring')
     $devapp3_database  = hiera('devapp3_database','noDBstring')
 

@@ -1,10 +1,13 @@
 ---
 classes:
+- 'global'
 - 'puppet'
 - 'hiera'
 - 'facter'
 - 'location'
 - 'ssh'
+os_packages:
+- 'vim-enhanced'
 permit_root_login : 'no'
 ssh_users :
 - 'root'
