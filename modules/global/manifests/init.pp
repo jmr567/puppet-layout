@@ -4,8 +4,7 @@ class global {
       path    => '/tmp/global',
       ensure  => present,
       mode    => 0640,
-      content => "I'm a Global File.",
+      content => "I'm a Global File in all Environments.",
     }
 
 }
-
