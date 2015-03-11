@@ -1,4 +1,4 @@
-class ssh::packages {
+class ssh::package {
 
     package { $ssh_packages:
       ensure => present,
